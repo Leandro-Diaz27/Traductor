@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traductor Multilingüe</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Traductor Multilingüe</h1>
+    <textarea id="texto" placeholder="Escribe el texto a traducir"></textarea>
+    
+    <div>
+      <label for="idiomaOrigen">Idioma de origen:</label>
+      <select id="idiomaOrigen">
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+        <option value="de">Alemán</option>
+        <option value="it">Italiano</option>
+        <option value="pt">Portugués</option>
+        <option value="ru">Ruso</option>
+        <option value="ar">Árabe</option>
+        <option value="zh-CN">Chino</option>
+        <option value="ja">Japonés</option>
+        <option value="ko">Coreano</option>
+        <option value="hi">Hindi</option>
+        <option value="nl">Neerlandés</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="idiomaDestino">Idioma de destino:</label>
+      <select id="idiomaDestino">
+        <option value="en">Inglés</option>
+        <option value="es">Español</option>
+        <option value="fr">Francés</option>
+        <option value="de">Alemán</option>
+        <option value="it">Italiano</option>
+        <option value="pt">Portugués</option>
+        <option value="ru">Ruso</option>
+        <option value="ar">Árabe</option>
+        <option value="zh-CN">Chino</option>
+        <option value="ja">Japonés</option>
+        <option value="ko">Coreano</option>
+        <option value="hi">Hindi</option>
+        <option value="nl">Neerlandés</option>
+      </select>
+    </div>
+
+    <button onclick="traducir()">Traducir</button>
+    <h2>Traducción:</h2>
+    <p id="resultado"></p>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
